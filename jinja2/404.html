@@ -32,6 +32,10 @@
             {% endtrans %}</p>
         {%- endif %}
 
+        <p>{% trans http_link='https://developer.mozilla.org/docs/Web/HTTP', 404_link='https://developer.mozilla.org/docs/Web/HTTP/Status/404' %}
+            In the MDN <a href="{{ http_link }}">HTTP</a> documentation, you can learn more about the <a href="{{ 404_link }}">404 error code</a>.
+            {% endtrans %}</p>
+
       {% elif reason=="banneduser" %}
 
         <p class="notice">{{ _("This user's profile has been banned.") }}</p>
